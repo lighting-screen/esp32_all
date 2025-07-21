@@ -1,0 +1,3 @@
+[submodule "yd_esp32_s3_lite/pio_arduino/lib/esp32_st7306_driver"]
+	path = yd_esp32_s3_lite/pio_arduino/lib/esp32_st7306_driver
+	url = https://github.com/GeekYang945/esp32_st7306_driver.git
