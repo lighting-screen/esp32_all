@@ -41,9 +41,12 @@ void hal_setup(void)
 
   /* Create LVGL display and set the flush function */
   lvDisplay = lv_display_create(ST7306_WIDTH, ST7306_HEIGHT);
+  lv_display_set_rotation(lvDisplay, LV_DISPLAY_ROTATION_180);
+  
   lv_display_set_color_format(lvDisplay, LV_COLOR_FORMAT_RGB565);
   lv_display_set_flush_cb(lvDisplay, my_disp_flush);
   lv_display_set_buffers(lvDisplay, lvBuffer, NULL, lvBufferSize, LV_DISPLAY_RENDER_MODE_PARTIAL);
+  // lv_display_set_rotation(lvDisplay, LV_DISPLAY_ROTATION_180);
 
   /* Set the touch input function */
   // lvInput = lv_indev_create();
