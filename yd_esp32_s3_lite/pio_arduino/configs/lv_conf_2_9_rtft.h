@@ -12,11 +12,10 @@
  */
 
 /* clang-format off */
-#if 0 /* Set this to "1" to enable content */
+#if 1 /* Set this to "1" to enable content */
 
 #ifndef LV_CONF_H
 #define LV_CONF_H
-
 /* If you need to include anything here, do it inside the `__ASSEMBLY__` guard */
 #if  0 && defined(__ASSEMBLY__)
 #include "my_include.h"
@@ -1319,7 +1318,8 @@
 #define LV_BUILD_EXAMPLES 1
 
 /** Build the demos */
-#define LV_BUILD_DEMOS 1
+// disable this because we move it to src
+#define LV_BUILD_DEMOS 0
 
 /*===================
  * DEMO USAGE

@@ -10,8 +10,6 @@
 #include "lv_demo_widgets.h"
 #include "lvgl_private.h"
 
-#if LV_USE_DEMO_WIDGETS
-
 #if LV_USE_STDLIB_MALLOC == LV_STDLIB_BUILTIN && LV_MEM_SIZE < (38ul * 1024ul)
     #error Insufficient memory for lv_demo_widgets. Please set LV_MEM_SIZE to at least 38KB (38ul * 1024ul).  48KB is recommended.
 #endif
@@ -1716,4 +1714,3 @@ static void tabview_delete_event_cb(lv_event_t * e)
         lv_style_reset(&style_bullet);
     }
 }
-#endif

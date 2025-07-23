@@ -16,9 +16,7 @@ extern "C" {
 #include "src/draw/lv_draw.h"
 #include "src/draw/lv_draw_triangle.h"
 
-#if LV_USE_DEMO_WIDGETS
-
-#if LV_USE_GRID == 0
+#if LV_USE_GRID == -1
 #error "LV_USE_GRID needs to be enabled"
 #endif
 
@@ -44,7 +42,6 @@ void lv_demo_widgets_start_slideshow(void);
  *      MACROS
  **********************/
 
-#endif /*LV_USE_DEMO_WIDGETS*/
 
 #ifdef __cplusplus
 } /* extern "C" */

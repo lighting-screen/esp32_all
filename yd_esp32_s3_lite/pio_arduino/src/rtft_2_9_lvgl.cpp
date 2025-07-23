@@ -1,7 +1,8 @@
 #include "lvgl.h"
 #include "lvgl_hal.h"
 
-#include "demos/lv_demos.h"
+// #include "demos/lv_demos.h"
+#include "lv_demo_widgets.h"
 #include <Arduino.h>
 
 
