@@ -12,6 +12,7 @@ and bring up different screen
 ## sdk
 - [x] platformio
 	 - [x] arduino
+	 - [x] esp-idf
 
 ## gui
 - [x] lvgl
